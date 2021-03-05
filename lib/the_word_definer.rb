@@ -1,0 +1,6 @@
+class Word
+  
+
+
+
+end
