@@ -2,7 +2,7 @@ class Definition
   attr_reader :id
   attr_accessor :name, :word_id
 
-  @@songs = {}
+  @@definitions = {}
   @@total_rows = 0
 
   def initialize(name, word_id, id)

@@ -1,6 +1,6 @@
-<h1>Word: <%= @word.name %></h1>
+<h2>Word: <%= @word.name %></h2>
 
-<h3><%="Definitions for  #{@word.name}:"%></h3>
+<h3>Definitions</h3>
 
   <% if @word.definitions %>
     <ul>
@@ -16,11 +16,12 @@
 
 <form action="/words/<%= @word.id %>/definitions" method="post">
   <div class="form-group">
-    <label for="definition_name">Definition</label>
     <input id="definition_name" name="definition_name" class="form-control" type="text">
   </div>
   <button type="submit" class="btn">Add definition</button>
 </form>
 
+
+
 <p><a href="/words/<%= @word.id %>/edit">Edit word</a></p>
-<a href="/words">Return to word list</a>
+<p><a href="/words">Return to word list</a></p>
