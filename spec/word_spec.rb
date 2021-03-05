@@ -86,15 +86,15 @@ describe '#Word' do
     end
   end
 
-  # describe('.search') do
-  #   it("returns all words with names matching a given search string") do
-  #     word = Word.new("apple", nil)
-  #     word.save()
-  #     word2 = Word.new("banana", nil)
-  #     word2.save()
-  #     search_result = Word.search("apple")
-  #     expect(search_result[0] == word).to(eq(true))
-  #   end
-  # end
+  describe('.search') do
+    it("returns all words with names matching a given search string") do
+      word = Word.new("apple", nil)
+      word.save()
+      word2 = Word.new("banana", nil)
+      word2.save()
+      search_result = Word.search("apple")
+      expect(search_result[0] == word).to(eq(true))
+    end
+  end
 
 end

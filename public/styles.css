@@ -1,11 +1,12 @@
 body {
   background-color: aqua;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 3vw;
+  font-size: 2.5vw;
 }
 
 h1 {
-  font-size: 6vw;
+  font-size: 7vw;
+  margin-bottom: 3vw;
 }
 
 h2 {
@@ -24,17 +25,36 @@ h4 {
   list-style-type: none
 }
 
-#search, #name, #_method {
+#search {
   width: 30vw;
+  border: .3vw solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 2vw 2vw 2vw 2vw;
+}
+
+#edit_name {
+  width: 25vw;
+  border: .3vw solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 1vw 2vw 1vw 2vw;
+}
+
+#def {
+  width: 50vw;
   box-sizing: border-box;
   border: .3vw solid #ccc;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 2.5vw;
   background-color: white;
-  background-image: url('searchicon.png');
   background-position: 10px 10px;
   background-repeat: no-repeat;
-  padding: 3vw 3vw 3vw 3vw;
+  padding: 1vw 2vw 1vw 2vw;
 }
 
 #definition_name {
@@ -42,23 +62,25 @@ h4 {
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 2.5vw;
   background-color: white;
-  background-image: url('searchicon.png');
   background-position: 10px 10px;
   background-repeat: no-repeat;
-  padding: 3vw 3vw 3vw 3vw;
+  padding: 2vw 2vw 2vw 2vw;
 }
 
 .btn {
-  padding: 15px 15px;
-  font-size: 24px;
+  padding: 1.5vw 1.5vw;
+  margin-bottom: 1.5vw;
+  margin-top: .5vw;
+  font-size: 2vw;
   font-weight: bold;
   cursor: pointer;
   text-align: center;
+  border: none;
+  border-radius: 15px;
   color: rgb(20, 87, 231);
   background-color: rgba(255, 219, 16, 0.927);
-  border-radius: 15px;
   box-shadow: 0 9px rgba(181, 181, 181, 0.824);
 }
 
@@ -69,6 +91,32 @@ h4 {
 
 .btn:active {
   background-color: rgb(255, 227, 66);
+  box-shadow: 0 5px rgba(152, 152, 152, 0.824);
+  transform: translateY(4px);
+}
+
+.btn_delete {
+  padding: 1.5vw 1.5vw;
+  margin-bottom: 1.5vw;
+  margin-top: .5vw;
+  font-size: 2vw;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  color: rgb(242, 242, 242);
+  background-color: rgb(255, 16, 16);
+  box-shadow: 0 9px rgba(181, 181, 181, 0.824);
+}
+
+.btn_delete:hover {
+  background-color: rgb(254, 54, 54);
+  color: rgb(255, 255, 255);
+}
+
+.btn_delete:active {
+  background-color: rgb(255, 16, 16);
   box-shadow: 0 5px rgba(152, 152, 152, 0.824);
   transform: translateY(4px);
 }
