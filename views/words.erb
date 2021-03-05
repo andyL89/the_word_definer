@@ -1,6 +1,6 @@
-<h1>The Word Finder!</h1>
+<h1>The Word Definer!</h1>
 
-<h3>Words To Learn:</h3>
+<h2>Words To Learn:</h2>
 <div class="words_ul">
   <% if @words.any? %>
     <ul>
@@ -17,7 +17,7 @@
 <form action="/words">
   <div class="form-group">
     <label for="search">Search our words</label>
-    <input id="search" name="search" class="form-control" type="text">
+    <input id="search" name="search" class="form-control" style="font-size:3vw;" type="text">
   </div>
   <button type="submit" class="btn">Go!</button>
 </form>
