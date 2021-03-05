@@ -1,7 +1,7 @@
 <h2>Word: <%= @word.name %></h2>
 
 <h3>Definitions</h3>
-
+<div class='def_ul'>
   <% if @word.definitions %>
     <ul>
       <% @word.definitions.each do |definition| %>
@@ -11,7 +11,7 @@
   <% else %>
     <p>There are no definitions listed for this word yet.</p>
   <% end %>
-
+</div>
 <h4>Add a definition:</h4>
 
 <form action="/words/<%= @word.id %>/definitions" method="post">

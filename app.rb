@@ -53,13 +53,11 @@ delete('/words/:id') do
 end
 
 # Definitions
-# Get the detail for a specific definition.
 get('/words/:id/definitions/:definition_id') do
   @definition = Definition.find(params[:definition_id].to_i())
   erb(:definition)
 end
 
-# Post a new definition. After the definition is added, Sinatra will route to the view for the word the definition belongs to.
 post('/words/:id/definitions') do
   @word = Word.find(params[:id].to_i())
   definition = Definition.new(params[:definition_name], @word.id, nil)
@@ -67,7 +65,6 @@ post('/words/:id/definitions') do
   erb(:word)
 end
 
-# Edit a definition and then route back to the word view.
 patch('/words/:id/definitions/:definition_id') do
   @word = Word.find(params[:id].to_i())
   definition = Definition.find(params[:definition_id].to_i())
@@ -75,7 +72,6 @@ patch('/words/:id/definitions/:definition_id') do
   erb(:word)
 end
 
-# Delete a definition and then route back to the word view.
 delete('/words/:id/definitions/:definition_id') do
   definition = Definition.find(params[:definition_id].to_i())
   definition.delete
