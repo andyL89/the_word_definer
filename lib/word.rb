@@ -40,13 +40,17 @@ class Word
     @@words.delete(self.id)
   end
 
-  def self.search(search_str)
-    result_array = []
-    @@words.each do |id, album|
-      if word.name.downcase == search_str.downcase
-        result_array.push(word)
-      end
-    end
-    result_array
+  def definitions
+    Definition.find_by_word(self.id)
   end
+
+  # def self.search(search_str)
+  #   result_array = []
+  #   @@words.each do |id, word|
+  #     if word.name.downcase == search_str.downcase
+  #       result_array.push(word)
+  #     end
+  #   end
+  #   result_array
+  # end
 end

@@ -1,9 +1,11 @@
 require('sinatra')
 require('sinatra/reloader')
 require('./lib/word')
+require('./lib/definition')
 require('pry')
 also_reload('lib/**/*.rb')
 
+# Words
 get('/') do
   @words = Word.all
   erb(:words)
@@ -49,3 +51,5 @@ delete('/words/:id') do
   @words = Word.all
   erb(:words)
 end
+
+# Definitions

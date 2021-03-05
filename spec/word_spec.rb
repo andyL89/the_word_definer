@@ -1,11 +1,13 @@
 require 'rspec'
 require 'word'
+require 'definition'
 require 'pry'
 
 describe '#Word' do
 
   before(:each) do
     Word.clear()
+    Definition.clear()
   end
 
   describe('#save') do
@@ -71,5 +73,28 @@ describe '#Word' do
       expect(Word.all).to(eq([word2]))
     end
   end
+
+  describe('#definitions') do
+    it("returns a word's definitions") do
+      word = Word.new("bark", nil)
+      word.save()
+      definition = Definition.new("a tree's outer layer", word.id, nil)
+      definition.save()
+      definition2 = Definition.new("the sound a dog makes", word.id, nil)
+      definition2.save()
+      expect(word.definitions).to(eq([definition, definition2]))
+    end
+  end
+
+  # describe('.search') do
+  #   it("returns all words with names matching a given search string") do
+  #     word = Word.new("apple", nil)
+  #     word.save()
+  #     word2 = Word.new("banana", nil)
+  #     word2.save()
+  #     search_result = Word.search("apple")
+  #     expect(search_result[0] == word).to(eq(true))
+  #   end
+  # end
 
 end
