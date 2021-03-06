@@ -1,6 +1,6 @@
 <h1>The Word Definer!</h1>
 
-<h2>Words To Learn:</h2>
+<h2>Word List:</h2>
 <div class="words_ul">
   <% if @words.any? %>
     <ul>
@@ -14,10 +14,10 @@
 </div>
 <a href="/words/new"><span style="color:green">Add a new word</span></a>
 
-<form action="/words">
+<%# <form action="/words">
   <div class="form-group">
-    <label style="font-size:3vw;" for="search">Search our words</label>
+    <label for="search">Search word list</label>
     <input id="search" name="search" class="form-control" style="font-size:3vw;" type="text">
   </div>
   <button type="submit" class="btn">Go!</button>
-</form>
+</form> %>
