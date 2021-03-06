@@ -5,7 +5,7 @@
 * * *
 
 ## Description
-This is an application for finding the definitions of words from a dynamic list that can be updated as the user pleases.
+This is an application for finding the definitions of words from a dynamic list that can be updated as the user pleases. Users can add, update, and delete words and their definitions.
 * * *
 
 ## Technologies used
@@ -88,10 +88,10 @@ gem install bundler
 bundle
 ```
 
-* Then to run the program in the terminal, use the command:
+* Run tests with the command:
 
 ``` bash
-ruby script.rb
+rspec
 ```
 
 

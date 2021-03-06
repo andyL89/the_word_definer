@@ -1,11 +1,12 @@
 body {
-  background-color: aqua;
+  background-color: rgb(121, 255, 246);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
 }
 
 h1 {
   font-size: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 h2 {
@@ -21,14 +22,40 @@ h4 {
 }
 
 .words_ul ul {
-  list-style-type: none
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  column-count: 3;
+  column-gap: 10px;
+  margin-bottom: 20px;
 }
 
-ul, a {
+.words_ul li {
+  column-width: 200px;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  font-size: 20px;
+  list-style-position: inside;
+}
+
+p {
   font-size: 20px;
 }
 
+a {
+  font-size: 20px;
+}
+
+label {
+  font-size: 18px;
+}
+
 #search, #name {
+  margin: 0 auto;
+  position: center;
   width: 200px;
   font-size: 20px;
   border: .3px solid #ccc;
@@ -39,18 +66,8 @@ ul, a {
   padding: 2px 15px 2px 15px;
 }
 
-#edit_name {
-  width: 200px;
-  font-size: 20px;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: white;
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  padding: 2px 15px 2px 15px;
-}
-
 #def {
+  margin: 0 auto;
   width: 500px;
   font-size: 20px;
   border: 2px solid #ccc;
@@ -62,6 +79,7 @@ ul, a {
 }
 
 #definition_name {
+  margin: 0 auto;
   width: 500px;
   font-size: 20px;
   border: 2px solid #ccc;
@@ -73,10 +91,10 @@ ul, a {
 }
 
 .btn {
-  padding: 1.5 1.5vw;
-  margin-bottom: 1.5vw;
-  margin-top: 10px;
-  font-size: 25px;
+  padding: 10px 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 20px;
   font-weight: bold;
   cursor: pointer;
   text-align: center;
@@ -99,15 +117,14 @@ ul, a {
 }
 
 .btn_delete {
-  padding: 1.5vw 1.5vw;
-  margin-bottom: 1.5vw;
-  margin-top: .5vw;
-  font-size: 2vw;
+  padding: 10px 10px;
+  margin: 10px 10px 20px;
+  font-size: 20px;
   font-weight: bold;
   cursor: pointer;
+  text-align: center;
   border: none;
   border-radius: 15px;
-  text-align: center;
   color: rgb(242, 242, 242);
   background-color: rgb(255, 16, 16);
   box-shadow: 0 9px rgba(181, 181, 181, 0.824);

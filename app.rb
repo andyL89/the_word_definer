@@ -33,11 +33,6 @@ get('/words/:id') do
   erb(:word)
 end
 
-# get('/words/:id') do
-#   @word = Word.self.search(params[:id].to_i())
-#   erb(:word)
-# end
-
 get('/words/:id/edit') do
   @word = Word.find(params[:id].to_i())
   erb(:edit_word)
