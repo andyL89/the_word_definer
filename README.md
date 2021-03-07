@@ -21,9 +21,9 @@ This is an application for finding the definitions of words from a dynamic list 
 ## Installation :
 ### Want to see this webpage now?
 
-* Go to ( https://salty-mountain-39366.herokuapp.com/ ).
+* Go to ( https://lit-headland-58778.herokuapp.com/ ).
 
-- Or clone the project to your computer and open locally:
+Or clone the project to your computer and open locally:
 
 * Go to ( https://github.com/andyL89/the_word_definer ).
 
