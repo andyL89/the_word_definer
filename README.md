@@ -98,6 +98,13 @@ bundle
 rspec
 ```
 
+* View the site by first using the command:
+
+``` bash
+ruby app.rb
+```
+
+* Then, in your browser, navigate to `localhost:4567`
 
 ## Addition comments:
 * Created on 3/5/21
